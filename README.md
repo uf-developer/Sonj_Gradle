@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.uf.jsonutils:SonjGradle:1.3.0'
+    implementation 'io.github.uf-developer:SonjGradle:1.3.0'
 }
 ```
 ## How to Use
