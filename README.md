@@ -81,14 +81,14 @@ File `'%APPDATA%/file.json'`
 ```
 ------------------------------------------------------
 ### Features
-#### JSONString.Tab(String, Boolean) - Automatic indentation & Automatic word wrapping
-#### JSONFile.setDirectory(String) - SetFileDirectory & Load json file
-#### JSONFile.get(String) - Get value from json file
-#### JSONFile.remove(String) - Remove value from json file
-#### JSONFile.save() - Save json file
-#### JSONFile.save(String, Object) - Save json file & Put the value into a json file
-#### JSONFile.containsKey(String) - Check if json file contains key
-#### JSONFile.putAll(JSONObject) - Put all the values into a json file
-#### JSONFile.overwrite(JSONObject) - Overwrite the json file with the new values
-#### JSONObject & JSONArray - Usage is the same as for Map and Array. Using toString will output in json syntax
-#### JSONParser$parseObject & JSONParser$parseArray - String to JSONObject & JSONArray
+##### JSONString.Tab(String, Boolean) - Automatic indentation & Automatic word wrapping
+##### JSONFile.setDirectory(String) - SetFileDirectory & Load json file
+##### JSONFile.get(String) - Get value from json file
+##### JSONFile.remove(String) - Remove value from json file
+##### JSONFile.save() - Save json file
+##### JSONFile.save(String, Object) - Save json file & Put the value into a json file
+##### JSONFile.containsKey(String) - Check if json file contains key
+##### JSONFile.putAll(JSONObject) - Put all the values into a json file
+##### JSONFile.overwrite(JSONObject) - Overwrite the json file with the new values
+##### JSONObject & JSONArray - Usage is the same as for Map and Array. Using toString will output in json syntax
+##### JSONParser$parseObject & JSONParser$parseArray - String to JSONObject & JSONArray
