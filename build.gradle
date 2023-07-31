@@ -20,7 +20,7 @@ artifacts {
     archives sourcesJar
 }
 publishing {
-  // Privacy
+    // Personal information not disclosed
 }
 
 signing {
