@@ -1,2 +1,28 @@
-group = 'com.uf.jsonutils'
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+    id 'signing'
+}
+
+group = 'io.github.uf-developer'
 version = '1.3.0'
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    archiveClassifier = 'javadoc'
+    from javadoc.destinationDir
+}
+task sourcesJar(type: Jar) {
+    archiveClassifier = 'sources'
+    from sourceSets.main.allSource
+}
+artifacts {
+    archives javadocJar
+    archives sourcesJar
+}
+publishing {
+  // Privacy
+}
+
+signing {
+    sign publishing.publications.mavenJava
+}
