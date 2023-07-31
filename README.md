@@ -90,5 +90,5 @@ File `'%APPDATA%/file.json'`
 ##### JSONFile.containsKey(String) - Check if json file contains key
 ##### JSONFile.putAll(JSONObject) - Put all the values into a json file
 ##### JSONFile.overwrite(JSONObject) - Overwrite the json file with the new values
-##### JSONObject & JSONArray - Usage is the same as for Map and Array. Using toString will output in json syntax
+##### JSONObject & JSONArray - Usage is the same as for Map and Array, Using toString will output in json syntax
 ##### JSONParser$parseObject & JSONParser$parseArray - String to JSONObject & JSONArray
