@@ -1,7 +1,7 @@
 # Sonj Gradle
 ## Description
 ##### Json Util &amp; Json File Generator
-#### Last version : Release 1.3.0
+#### Last version : Snapshot sn-3a
 ## Import
 File `'build.gradle'`
 ```gradle
@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.github.uf-developer:SonjGradle:1.3.0'
+    implementation 'io.github.uf-developer:SonjGradle:sn-3a'
 }
 ```
 ## How to Use
