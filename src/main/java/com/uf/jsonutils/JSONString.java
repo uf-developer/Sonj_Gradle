@@ -10,9 +10,7 @@ public class JSONString {
 			j++;
 			if(c == '	' || c == ' ' || c == '\n' || c == '\r') continue;
 			if(c == '}' || c == ']') {
-				if(!isString) 
-				returnString+=(file?"\r\n":"\n") + TabIndex(--tab);
-				returnString+= c;
+				if(!isString) returnString+=(file?"\r\n":"\n") + "	".repeat(--tab) + c;
 				continue;
 			}
 			returnString+=c;
@@ -22,8 +20,7 @@ public class JSONString {
 					if(!isString)
 					tab++;
 				case ',':
-					if(!isString)
-					returnString+=(file?"\r\n":"\n") + TabIndex(tab);
+					if(!isString) returnString+=(file?"\r\n":"\n") + "	".repeat(tab);
 					break;
 				case ':':
 					if(!isString)
@@ -35,14 +32,5 @@ public class JSONString {
 			}
 		}
 		return returnString;
-	}
-	private static String TabIndex(int index) {
-		String s = "																																												"
-				+ "																																													"
-				+ "																																													"
-				+ "																																													"
-				+ "																																													"
-				+ "																																													";
-		return s.substring(s.length()-index);
 	}
 }
