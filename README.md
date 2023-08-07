@@ -1,7 +1,7 @@
 # Sonj Gradle
 ## Description
 ##### Json Util &amp; Json File Generator
-#### Last version : 1.3.2
+#### Last version : v1.3.2
 ## Import
 File `'build.gradle'`
 ```gradle
