@@ -8,23 +8,21 @@ public class JSONString {
 		int j = -1;
 		for(char c : target.toCharArray()) {
 			j++;
-			if(c == '	' || c == ' ' || c == '\n' || c == '\r') continue;
+			if(!isString && (c == '\t' || c == ' ') || c == '\n' || c == '\r') continue;
 			if(c == '}' || c == ']') {
-				if(!isString) returnString+=(file?"\r\n":"\n") + "	".repeat(--tab) + c;
-				continue;
+				if(!isString) returnString+=(file?"\r\n":"\n") + "\t".repeat(--tab) + c;
+				if(!isString) continue;
 			}
 			returnString+=c;
 			switch (c) {
 				case '{':
 				case '[':
-					if(!isString)
-					tab++;
+					if(!isString) tab++;
 				case ',':
-					if(!isString) returnString+=(file?"\r\n":"\n") + "	".repeat(tab);
+					if(!isString) returnString+=(file?"\r\n":"\n") + "\t".repeat(tab);
 					break;
 				case ':':
-					if(!isString)
-					returnString+=" ";
+					if(!isString) returnString+=" ";
 					break;
 				case '\"':
 					if(!(target.charAt(j-1) == '\\' && target.charAt(j-2) != '\\')) isString = !isString;
