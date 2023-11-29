@@ -1,6 +1,6 @@
 # Sonj Gradle v1.3.2
 ## Description
-##### Json Util &amp; Json File Generator
+#### Json Util & Json File Generator
 #### Last version : v1.3.2
 ## Adding a Dependency
 #### Gradle
@@ -24,7 +24,7 @@ Maven
 </dependency>
 ```
 ## How to Use
-### Example Code
+#### Example Code
 ```java
 import com.uf.jsonutils.JSONFile;
 import com.uf.jsonutils.JSONString;
@@ -51,7 +51,7 @@ public class Example {
     }
 }
 ```
-### Result
+## Result
 ```
 JSONString.Tab(str, false) -> {
 	"strkey": "value",
@@ -90,15 +90,15 @@ File `'%APPDATA%/file.json'`
 }
 ```
 ------------------------------------------------------
-### Features
-##### JSONString.Tab(String, Boolean) - Automatic indentation & Automatic word wrapping
-##### JSONFile.setDirectory(String) - SetFileDirectory & Load json file
-##### JSONFile.get(String) - Get value from json file
-##### JSONFile.remove(String) - Remove value from json file
-##### JSONFile.save() - Save json file
-##### JSONFile.save(String, Object) - Save json file & Put the value into a json file
-##### JSONFile.containsKey(String) - Check if json file contains key
-##### JSONFile.putAll(JSONObject) - Put all the values into a json file
-##### JSONFile.overwrite(JSONObject) - Overwrite the json file with the new values
-##### JSONObject & JSONArray - Usage is the same as for Map and Array, Using toString will output in json syntax
-##### JSONParser$parseObject & JSONParser$parseArray - String to JSONObject & JSONArray
+## Features
+#### JSONString.Tab(String, Boolean) - Automatic indentation & Automatic word wrapping
+#### JSONFile.setDirectory(String) - SetFileDirectory & Load json file
+#### JSONFile.get(String) - Get value from json file
+#### JSONFile.remove(String) - Remove value from json file
+#### JSONFile.save() - Save json file
+#### JSONFile.save(String, Object) - Save json file & Put the value into a json file
+#### JSONFile.containsKey(String) - Check if json file contains key
+#### JSONFile.putAll(JSONObject) - Put all the values into a json file
+#### JSONFile.overwrite(JSONObject) - Overwrite the json file with the new values
+#### JSONObject & JSONArray - Usage is the same as for Map and Array, Using toString will output in json syntax
+#### JSONParser$parseObject & JSONParser$parseArray - String to JSONObject & JSONArray
