@@ -5,8 +5,7 @@ plugins {
 }
 
 group = 'io.github.uf-developer'
-version = '1.3.2'
-
+version = '2.0.0'
 task javadocJar(type: Jar, dependsOn: javadoc) {
     archiveClassifier = 'javadoc'
     from javadoc.destinationDir
@@ -19,8 +18,54 @@ artifacts {
     archives javadocJar
     archives sourcesJar
 }
+
 publishing {
-    // Personal information not disclosed
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+
+            groupId = 'io.github.uf-developer'
+            artifactId = 'SonjGradle'
+            version = '2.0.0'
+
+            artifact javadocJar
+            artifact sourcesJar
+
+            pom {
+                name = 'SonjGradle 2.0.0'
+                description = 'SonjGradle 2.0.0'
+                url = 'https://github.com/uf-developer/Sonj_Gradle/'
+                licenses {
+                    license {
+                        name = 'The Apache License, Version 2.0'
+                        url = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                    }
+                }
+                developers {
+                    developer {
+                        id = 'I-uf'
+                        name = 'i_uf_dev'
+                        email = 'uf_developer@outlook.kr'
+                    }
+                }
+                scm {
+                    connection = 'scm:git:git://github.com/uf-developer/Sonj_Gradle.git'
+                    developerConnection = 'scm:git:ssh://github.com/uf-developer/Sonj_Gradle.git'
+                    url = 'https://github.com/uf-developer/Sonj_Gradle/'
+                }
+            }
+        }
+    }
+    repositories {
+        maven {
+            name = 'sonjgradle'
+            url = uri('https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/')
+            credentials {
+                username = System.getenv('maven_username')
+                password = System.getenv('maven_password')
+            }
+        }
+    }
 }
 
 signing {
