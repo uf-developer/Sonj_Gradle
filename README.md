@@ -1,7 +1,6 @@
 # Sonj Gradle v1.3.2
 ## Description
 #### Json Util & Json File Generator
-#### Last version : v1.3.2
 ## Adding a Dependency
 #### Gradle
 ```groovy
@@ -15,7 +14,7 @@ dependencies {
     implementation('io.github.uf-developer:SonjGradle:1.3.2')
 }
 ```
-Maven
+#### Maven
 ```xml
 <dependency>
     <groupId>io.github.uf-developer</groupId>
