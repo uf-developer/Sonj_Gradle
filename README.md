@@ -1,4 +1,4 @@
-#Sonj Gradle
+# Sonj Gradle v1.3.2
 ## Description
 ##### Json Util &amp; Json File Generator
 #### Last version : v1.3.2
