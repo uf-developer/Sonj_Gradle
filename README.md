@@ -1,17 +1,27 @@
-# Sonj Gradle
+![image](https://github.com/uf-developer/Sonj_Gradle/assets/117362735/ac6b4ba2-ae87-47f0-906d-eef1f2e3dd52)# Sonj Gradle
 ## Description
 ##### Json Util &amp; Json File Generator
 #### Last version : v1.3.2
-## Import
-File `'build.gradle'`
-```gradle
-repositories {
-    mavenCentral()
-}
-
+## Adding a Dependency
+#### Gradle
+```groovy
 dependencies {
     implementation 'io.github.uf-developer:SonjGradle:1.3.2'
 }
+```
+#### Gradle (Kotlin)
+```kotlin
+dependencies {
+    implementation('io.github.uf-developer:SonjGradle:1.3.2')
+}
+```
+Maven
+```xml
+<dependency>
+    <groupId>io.github.uf-developer</groupId>
+    <artifactId>SonjGradle</artifactId>
+    <version>1.3.2</version>
+</dependency>
 ```
 ## How to Use
 ### Example Code
