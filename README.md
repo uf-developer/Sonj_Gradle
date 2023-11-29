@@ -1,4 +1,4 @@
-![image](https://github.com/uf-developer/Sonj_Gradle/assets/117362735/ac6b4ba2-ae87-47f0-906d-eef1f2e3dd52)# Sonj Gradle
+#Sonj Gradle
 ## Description
 ##### Json Util &amp; Json File Generator
 #### Last version : v1.3.2
