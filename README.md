@@ -1,4 +1,4 @@
-# Sonj Gradle v1.3.2
+# Sonj Gradle v2.0.0
 ## Description
 #### Json Util & Json File Generator
 ## Adding a Dependency
